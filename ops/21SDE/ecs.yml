@@ -60,6 +60,10 @@ Resources:
           PortMappings:
             - ContainerPort: 8080
           Environment:
+            - Name: spring.profiles.active
+              Value: div
+            - Name: server.port
+              Value: 8080
             - Name: database.databaseName
               Value: !Ref DBName
             - Name: database.portNumber
